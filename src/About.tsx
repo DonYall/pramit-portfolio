@@ -13,7 +13,7 @@ function About() {
           libero nunc ultricies libero, nec dictum nunc libero in mi.
         </p>
       </div>
-      <img src="/about-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
+      <img src="./about-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
     </section>
   );
 }

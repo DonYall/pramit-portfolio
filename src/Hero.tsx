@@ -11,7 +11,7 @@ function Hero() {
       <div className="flex flex-col justify-center items-center z-10 gap-4">
         <img
           className="size-72 rounded-full border-cyan-200 border-4 object-cover shadow-2xl shadow-cyan-900 mb-4"
-          src="/headshot.jpeg"
+          src="./headshot.jpeg"
           alt="avatar"
         />
         <h1 className="text-3xl font-semibold">Pramit Shende</h1>
@@ -45,7 +45,7 @@ function Hero() {
         </div>
       </div>
 
-      <img src="/hero-bg-original.jpg" alt="hero" className="w-full h-full object-cover absolute -z-10" />
+      <img src="./hero-bg-original.jpg" alt="hero" className="w-full h-full object-cover absolute -z-10" />
     </section>
   );
 }
