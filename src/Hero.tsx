@@ -9,11 +9,7 @@ function Hero() {
         <TypeAnimation sequence={["Hi", 1000, "I'm Pramit", 2000, "Welcome to my website."]} wrapper="span" cursor={true} />
       </div>
       <div className="flex flex-col justify-center items-center z-10 gap-4">
-        <img
-          className="size-72 rounded-full border-cyan-200 border-4 object-cover shadow-2xl shadow-cyan-900 mb-4"
-          src="./headshot.jpeg"
-          alt="avatar"
-        />
+        <img className="size-72 rounded-full object-cover mb-4" src="./headshot.jpeg" alt="avatar" />
         <h1 className="text-3xl font-semibold">Pramit Shende</h1>
         <span className="w-64 bg-white h-0.5 rounded-full"></span>
         <h2 className="font-montserrat">AEROSPACE ENGINEERING</h2>
