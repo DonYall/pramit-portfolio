@@ -43,7 +43,7 @@ function Contact() {
           </button>
         </form>
       </div>
-      <img src="./project-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
+      <img src="./contact-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
     </section>
   );
 }
