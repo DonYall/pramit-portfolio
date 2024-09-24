@@ -3,8 +3,8 @@ import { projects } from "./projects";
 
 function Projects() {
   return (
-    <section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 relative bg-black p-10 md:p-40 gap-8">
-      <h1 className="text-4xl font-normal font-montserrat leading-none text-white col-span-1 sm:col-span-2 lg:col-span-4 mb-12">PROJECTS</h1>
+    <section className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 relative bg-black p-10 lg:p-40 gap-8">
+      <h1 className="text-4xl font-normal font-montserrat leading-none text-white col-span-1 sm:col-span-2 xl:col-span-4 mb-12">PROJECTS</h1>
       {projects.map((project: any) => (
         <ProjectCard name={project.name} description={project.description} href={project.href} />
       ))}

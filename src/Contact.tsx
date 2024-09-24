@@ -3,8 +3,8 @@ import { AiFillInstagram } from "react-icons/ai";
 
 function Contact() {
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 relative bg-gradient-to-b from-black to-transparent">
-      <div className="col-span-3 md:col-span-1 p-10 md:p-40 my-auto flex flex-col items-start px-2 w-4/5 mx-auto md:w-fit md:px-10">
+    <section className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 relative bg-gradient-to-b from-black to-transparent">
+      <div className="col-span-3 md:col-span-1 p-10 lg:p-40 my-auto flex flex-col items-start px-2 w-4/5 mx-auto md:w-fit md:px-10">
         <h1 className="text-4xl font-normal font-montserrat leading-none mb-8">CONTACT</h1>
         <h3 className="text-gray-300 hidden md:block">Email</h3>
         <a href="mailto:pramitshende@gmail.com" className="text-lg">
@@ -31,7 +31,7 @@ function Contact() {
       </div>
       <div className="flex flex-col justify-center items-center z-10 gap-4 py-12">
         <form
-          className="flex flex-col gap-8 px-8 py-12 bg-cyan-200/10 backdrop-blur-[2px] rounded-xl border-gray-500 border w-4/5 md:w-1/2"
+          className="flex flex-col gap-8 px-8 py-12 bg-cyan-200/10 backdrop-blur-[2px] rounded-xl border-gray-500 border w-4/5 lg:w-1/2"
           action=""
         >
           <input type="text" placeholder="Name*" className="py-2 px-4 bg-black/40 rounded-lg text-sm" required />
