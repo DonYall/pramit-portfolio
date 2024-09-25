@@ -1,17 +1,21 @@
+import { skills } from "./config/skills";
+import SkillCard from "./components/SkillCard";
+
 function About() {
   return (
-    <section className="w-full h-screen grid grid-cols-1 lg:grid-cols-3 relative bg-gradient-to-b from-black to-transparent">
-      <div className="col-span-3 lg:col-span-2 p-10 lg:p-40 my-auto">
+    <section className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 relative bg-gradient-to-b from-black to-transparent">
+      <div className="col-span-2 lg:col-span-1 p-10 lg:p-40 lg:pr-16 my-auto">
         <h1 className="text-4xl font-normal font-montserrat leading-none">ABOUT</h1>
         <p className="text-lg mt-8 text-gray-300">
-          CA2RC is a student-led club to design, build, test and launch our first Cubesat project at Carleton University. Our team consists of 30
-          determined students from Carleton University's Engineering, Physics and Computer Science departments.
+          I am a 2nd year aerospace engineering co-op student at Carleton University. I have learnt and developed many technical skills and am eager
+          to apply my knowledge to real-world engineering problems. I am Always looking for opportunities to grow and learn in the aerospace industry
+          and am committed to making a significant impact in the field of Aerospace Engineering.
         </p>
-        <p className="text-lg mt-4 text-gray-300">
-          We provide a 3 month training program to familiarize our members with electronics, aerospace principles, physics, material science,
-          radiation, amateur radio training, error mitigation, testing methods and cubesat subsystems to bring all students to the same core level of
-          proficiency. Our training is in-line with Canadian Space Agency (CSA), European Space Agency (ESA) and NASA Cubesat requirements.
-        </p>
+      </div>
+      <div className="col-span-2 lg:col-span-1 grid grid-cols-2 gap-8 p-10 lg:p-20">
+        {skills.map((skill, index) => (
+          <SkillCard key={index} name={skill.name} description={skill.description} icon={skill.icon} />
+        ))}
       </div>
       <img src="./about-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
     </section>

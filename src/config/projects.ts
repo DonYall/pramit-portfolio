@@ -1,4 +1,5 @@
-const projects: { name: string; description: string; href: string }[] = [
+import { project } from "./defs";
+const projects: project[] = [
   {
     name: "CA2RC-SAT",
     description:
