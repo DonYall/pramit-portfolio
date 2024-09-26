@@ -8,7 +8,7 @@ function About() {
         <h1 className="text-4xl font-normal font-montserrat leading-none">ABOUT</h1>
         <p className="text-lg mt-8 text-gray-300">
           I am a 2nd year aerospace engineering co-op student at Carleton University. I have learnt and developed many technical skills and am eager
-          to apply my knowledge to real-world engineering problems. I am Always looking for opportunities to grow and learn in the aerospace industry
+          to apply my knowledge to real-world engineering problems. I am always looking for opportunities to grow and learn in the aerospace industry
           and am committed to making a significant impact in the field of Aerospace Engineering.
         </p>
       </div>

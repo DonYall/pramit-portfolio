@@ -24,6 +24,18 @@ const projects: project[] = [
       "Designed and launched a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse. Led a team of 10 students to design, build, and launch the balloon.",
     href: "https://www.ca2rc.ca/projects/hab",
   },
+  {
+    name: "High Altitude Balloon",
+    description:
+      "Designed and launched a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse. Led a team of 10 students to design, build, and launch the balloon.",
+    href: "https://www.ca2rc.ca/projects/hab",
+  },
+  {
+    name: "High Altitude Balloon",
+    description:
+      "Designed and launched a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse. Led a team of 10 students to design, build, and launch the balloon.",
+    href: "https://www.ca2rc.ca/projects/hab",
+  },
 ];
 
 export { projects };
