@@ -6,7 +6,7 @@ const iconClass = "w-full text-6xl mb-8";
 const skills: skill[] = [
   {
     name: "Design",
-    description: "Fusion 360, SolidWorks, AutoCAD, OnShape",
+    description: "Fusion 360, SolidWorks, Onshape",
     icon: <FaGears className={iconClass} />,
   },
   {
@@ -16,12 +16,12 @@ const skills: skill[] = [
   },
   {
     name: "Programming",
-    description: "Python, C++",
+    description: "Python, MATLAB",
     icon: <FaCode className={iconClass} />,
   },
   {
     name: "Data Analysis",
-    description: "Microsoft Office, MATLAB",
+    description: "Microsoft Excel, MATLAB",
     icon: <FaChartLine className={iconClass} />,
   },
 ];

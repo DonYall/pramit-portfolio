@@ -1,9 +1,28 @@
+import { useState, useRef, useEffect } from "react";
 import { skills } from "./config/skills";
 import SkillCard from "./components/SkillCard";
 
 function About() {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+        }
+      },
+      { rootMargin: "0px 0px -100px 0px" },
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 relative bg-gradient-to-b from-black to-transparent">
+    <section className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 relative" ref={ref}>
       <div className="col-span-2 lg:col-span-1 p-10 lg:p-40 lg:pr-16 my-auto">
         <h1 className="text-4xl font-normal font-montserrat leading-none">ABOUT</h1>
         <p className="text-lg mt-8 text-gray-300">
@@ -13,11 +32,17 @@ function About() {
         </p>
       </div>
       <div className="col-span-2 lg:col-span-1 grid grid-cols-2 gap-8 p-10 lg:p-20">
+        {/* HASHIRS IDEA EXPAND */}
         {skills.map((skill, index) => (
-          <SkillCard key={index} name={skill.name} description={skill.description} icon={skill.icon} />
+          <SkillCard
+            key={index}
+            name={skill.name}
+            description={skill.description}
+            icon={skill.icon}
+            className={`transition-opacity duration-[2s] ${isIntersecting ? "opacity-100" : "opacity-0"}`}
+          />
         ))}
       </div>
-      <img src="./about-bg.png" alt="hero" className="w-full h-full object-cover object-bottom absolute -z-10" />
     </section>
   );
 }

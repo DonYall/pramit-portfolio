@@ -3,10 +3,12 @@ export type project = {
   description: string;
   href: string;
   img?: string;
+  className?: string;
 };
 
 export type skill = {
   name: string;
   description: string;
   icon?: JSX.Element;
+  className?: string;
 };
