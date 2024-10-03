@@ -6,7 +6,7 @@ function Hero() {
     <section className="w-full h-screen grid grid-cols-1 md:grid-cols-2 relative">
       <div className="absolute h-screen flex items-center">
         <img className="relative object-cover md:w-1/2 my-auto brightness-[0.25] md:brightness-75" src="./earf.png" />
-        <div className="absolute w-1/2 py-4 bg-cyan-600/50 rounded-l rounded-full mt-96 flex justify-around">
+        <div className="absolute w-1/2 py-4 bg-cyan-600/50 rounded-l rounded-full mt-96 hidden lg:flex justify-around">
           <a href="https://carleton.ca" target="_blank" rel="noreferrer">
             <img className="h-16" src="./logos/carleton.png" alt="Carleton" />
           </a>
