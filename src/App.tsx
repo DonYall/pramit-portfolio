@@ -24,7 +24,7 @@ function App() {
           </>
         }
       />
-      <Route path="/project" element={<ProjectPage />}>
+      <Route path="project" element={<ProjectPage />}>
         <Route path=":name" element={<ProjectPage />} />
       </Route>
       <Route path="*" element={<Error />} />
