@@ -32,7 +32,7 @@ function Hero() {
         <h2 className="font-montserrat">AEROSPACE ENGINEERING</h2>
         <div className="flex gap-4">
           <a
-            href="https://www.linkedin.com/in/pramitshende/"
+            href="./resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="text-lg bg-white text-black font-bold hover:bg-cyan-200 transition-colors duration-300 rounded-lg border p-4 leading-none"
