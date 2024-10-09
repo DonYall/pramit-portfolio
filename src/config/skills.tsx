@@ -16,7 +16,7 @@ const skills: skill[] = [
   },
   {
     name: "Programming",
-    description: "Python, MATLAB",
+    description: "Python",
     icon: <FaCode className={iconClass} />,
   },
   {

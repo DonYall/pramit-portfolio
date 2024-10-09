@@ -31,6 +31,7 @@ function Projects() {
           name={project.name}
           description={project.description}
           href={project.href}
+          img={project.img}
           className={`transition-opacity duration-[2s] ${isIntersecting ? "opacity-100" : "opacity-0"}`}
         />
       ))}

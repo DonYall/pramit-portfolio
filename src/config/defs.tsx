@@ -2,8 +2,11 @@ export type project = {
   name: string;
   description: string;
   href: string;
-  img?: string;
+  img: string;
   className?: string;
+  subtitle?: string;
+  content?: string;
+  gallery?: string[];
 };
 
 export type skill = {

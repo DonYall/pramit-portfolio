@@ -23,7 +23,7 @@ body {
   padding: 0;
   color: white;
   background-image: linear-gradient(180deg, transparent, #0000ff25 65%, transparent 90%, black 100%), url("./assets/hero-bg.jpg");
-  background-size: contain;
+  background-size: 100vw auto;
   background-repeat: repeat-y;
   width: 100%;
 }
