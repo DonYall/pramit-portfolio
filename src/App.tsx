@@ -1,34 +1,36 @@
-import { Route, Routes } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Navbar from "./Header";
 import Hero from "./Hero";
-import Projects from "./Projects";
 import ProjectPage from "./pages/ProjectPage";
-import Error from "./pages/Error";
+import Projects from "./Projects";
+import { useState } from "react";
 
 function App() {
+  const [project, setProject] = useState("");
+
+  const handleProjectClicked = (name: string) => {
+    setProject(name);
+  };
+
+  const backClicked = () => {
+    setProject("");
+  };
+
+  if (project) {
+    return <ProjectPage name={project} onBackClicked={backClicked} />;
+  }
+
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Projects />
-            <Contact />
-            <Footer />
-          </>
-        }
-      />
-      <Route path="project" element={<ProjectPage />}>
-        <Route path=":name" element={<ProjectPage />} />
-      </Route>
-      <Route path="*" element={<Error />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Hero />
+      <Projects onProjectClicked={handleProjectClicked} />
+      <About />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

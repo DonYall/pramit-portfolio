@@ -2,21 +2,25 @@ import { projects } from "../config/projects";
 import Markdown from "react-markdown";
 import Error from "./Error";
 import { FaArrowLeft } from "react-icons/fa";
-function ProjectPage() {
-  const name = window.location.pathname.split("/")[2].toLowerCase();
-  const project = projects.find((p) => p.name.toLowerCase().replace(" ", "-") === name);
+import { useEffect } from "react";
+function ProjectPage({ name, onBackClicked }: { name: string; onBackClicked: () => void }) {
+  const project = projects.find((p) => p.name === name);
 
   if (!project) {
     return <Error />;
   }
 
+  useEffect(() => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <section className="min-h-screen bg-cover w-4/5 mx-auto py-16">
       <div className="flex items-center gap-4">
-        <a href="/" className="text-2xl text-white hover:text-cyan-300 flex gap-2 items-center font-semibold mb-6">
+        <button className="text-2xl text-white hover:text-cyan-300 flex gap-2 items-center font-semibold mb-6" onClick={onBackClicked}>
           <FaArrowLeft />
           <span>Back</span>
-        </a>
+        </button>
       </div>
       <h1 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-full">{project.name}</h1>
       <h2 className="text-2xl font-normal font-montserrat leading-none text-gray-300 mb-12 w-full">{project.subtitle}</h2>

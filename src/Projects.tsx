@@ -3,7 +3,7 @@ import ProjectCard from "./components/ProjectCard";
 import { project } from "./config/defs";
 import { projects } from "./config/projects";
 
-function Projects() {
+function Projects({ onProjectClicked }: { onProjectClicked: (name: string) => void }) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef(null);
 
@@ -32,6 +32,7 @@ function Projects() {
           description={project.description}
           href={project.href}
           img={project.img}
+          onClick={onProjectClicked}
           className={`transition-opacity duration-[2s] ${isIntersecting ? "opacity-100" : "opacity-0"}`}
         />
       ))}
