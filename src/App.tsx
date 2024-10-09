@@ -26,8 +26,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Projects onProjectClicked={handleProjectClicked} />
       <About />
+      <Projects onProjectClicked={handleProjectClicked} />
       <Contact />
       <Footer />
     </>
