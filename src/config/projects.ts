@@ -13,6 +13,8 @@ Led the thermal and structural design of CA2RC-SAT, a 3U CubeSat set to launch i
 
 - bullet 1
 - bullet 2
+
+[hyperlink](https://ca2rc.ca/projects/ca2rc-sat/)
 `,
     gallery: ["default.jpeg", "default.jpeg", "default.jpeg", "default.jpeg"],
   },
@@ -23,8 +25,7 @@ Led the thermal and structural design of CA2RC-SAT, a 3U CubeSat set to launch i
     href: "https://ca2rc.ca/projects/hab/",
     img: "default.jpeg",
     subtitle: "Project Lead",
-    content:
-      "Led a team of 10 students to design, build, and launch a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse.",
+    content: `Led a team of 10 students to design, build, and launch a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse.`,
   },
 ];
 

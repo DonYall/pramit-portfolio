@@ -25,7 +25,7 @@ function ProjectPage({ name, onBackClicked }: { name: string; onBackClicked: () 
       <h1 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-full">{project.name}</h1>
       <h2 className="text-2xl font-normal font-montserrat leading-none text-gray-300 mb-12 w-full">{project.subtitle}</h2>
       <span className="w-full h-1 bg-cyan-300 block mb-12" />
-      <div className="w-full">
+      <div className="w-full prose text-white prose-headings:text-white prose-a:text-cyan-300">
         <Markdown>{project.content}</Markdown>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
