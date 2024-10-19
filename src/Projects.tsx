@@ -29,7 +29,8 @@ function Projects({ onProjectClicked }: { onProjectClicked: (name: string) => vo
         <ProjectCard
           key={index}
           name={project.name}
-          description={project.description}
+          subtitle={project.subtitle}
+          organization={project.organization}
           href={project.href}
           img={project.img}
           onClick={onProjectClicked}

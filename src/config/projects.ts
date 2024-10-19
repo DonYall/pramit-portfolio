@@ -2,11 +2,10 @@ import { project } from "./defs";
 const projects: project[] = [
   {
     name: "CA2RC-SAT",
-    description:
-      "Authored and led design review processes to apply for $350,000 in funding from the CSA. Team leads for thermal and structural subsystems of CA2RC-SAT, a 3U CubeSat set to launch into orbit.",
     href: "https://ca2rc.ca/projects/ca2rc-sat/",
     img: "default.jpeg",
-    subtitle: "Thermal and Structural Lead",
+    subtitle: "Thermal/Structural Lead",
+    organization: "CA2RC",
     content: `
 # CA2RC
 Led the thermal and structural design of CA2RC-SAT, a 3U CubeSat set to launch into orbit. Authored and led design review processes to apply for $350,000 in funding from the CSA.
@@ -16,15 +15,39 @@ Led the thermal and structural design of CA2RC-SAT, a 3U CubeSat set to launch i
 
 [hyperlink](https://ca2rc.ca/projects/ca2rc-sat/)
 `,
-    gallery: ["default.jpeg", "default.jpeg", "default.jpeg", "default.jpeg"],
+    gallery: [
+      {
+        caption: "CA2RC-SAT",
+        src: "default.jpeg",
+      },
+      {
+        caption: "CA2RC-SAT",
+        src: "default.jpeg",
+      },
+    ],
   },
   {
-    name: "High Altitude Balloon",
-    description:
-      "Designed and launched a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse. Led a team of 10 students to design, build, and launch the balloon.",
+    name: "High-Altitude Balloon",
     href: "https://ca2rc.ca/projects/hab/",
     img: "default.jpeg",
     subtitle: "Project Lead",
+    organization: "CA2RC",
+    content: `Led a team of 10 students to design, build, and launch a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse.`,
+  },
+  {
+    name: "High-Altitude Balloon",
+    href: "https://ca2rc.ca/projects/hab/",
+    img: "default.jpeg",
+    subtitle: "Project Lead",
+    organization: "CA2RC",
+    content: `Led a team of 10 students to design, build, and launch a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse.`,
+  },
+  {
+    name: "High-Altitude Balloon",
+    href: "https://ca2rc.ca/projects/hab/",
+    img: "default.jpeg",
+    subtitle: "Project Lead",
+    organization: "CA2RC",
     content: `Led a team of 10 students to design, build, and launch a high-altitude balloon to 30 km altitude to measure atmospheric, gravitational and magnetic field changes during a total eclipse.`,
   },
 ];

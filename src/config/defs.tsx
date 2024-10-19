@@ -1,12 +1,17 @@
 export type project = {
   name: string;
-  description: string;
+  organization: string;
   href: string;
   img: string;
   className?: string;
-  subtitle?: string;
+  subtitle: string;
   content?: string;
-  gallery?: string[];
+  gallery?: projectImage[];
+};
+
+export type projectImage = {
+  caption: string;
+  src: string;
 };
 
 export type skill = {

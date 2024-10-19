@@ -31,7 +31,10 @@ function ProjectPage({ name, onBackClicked }: { name: string; onBackClicked: () 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         {project.gallery &&
           project.gallery.map((img, index) => (
-            <img key={index} src={`../project/${img}`} alt={project.name} className="w-full h-96 object-cover rounded-3xl" />
+            <div>
+              <img key={index} src={`../project/${img.src}`} alt={project.name} className="w-full h-96 object-cover rounded-3xl" />
+              <p className="text-md mt-2 text-gray-300">{img.caption}</p>
+            </div>
           ))}
       </div>
     </section>
