@@ -3,7 +3,7 @@ import { project } from "../config/defs";
 function ProjectCard({ name, subtitle, organization, img, className, onClick }: project & { onClick: (name: string) => void }) {
   return (
     <button
-      className="border-white border flex flex-col justify-start rounded-3xl transition-transform duration-300 transform hover:scale-105 xl:w-[calc(25%-1.5rem)] md:w-[calc(50%-1.5rem)] bg-black/30"
+      className="border-white border flex flex-col justify-start rounded-3xl transition-transform duration-300 transform hover:scale-105 xl:w-[calc(25%-1.5rem)] w-full md:w-[calc(50%-1.5rem)] bg-black/30"
       onClick={() => onClick(name)}
     >
       <img src={`./thumbnails/${img}`} alt={name} className={`w-full h-44 object-cover rounded-t-3xl ${className}`} />
