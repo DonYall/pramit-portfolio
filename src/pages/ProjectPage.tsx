@@ -3,8 +3,8 @@ import Markdown from "react-markdown";
 import Error from "./Error";
 import { FaArrowLeft } from "react-icons/fa";
 import { useEffect } from "react";
-function ProjectPage({ name, onBackClicked }: { name: string; onBackClicked: () => void }) {
-  const project = projects.find((p) => p.name === name);
+function ProjectPage({ slug: slug, onBackClicked }: { slug: string; onBackClicked: () => void }) {
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return <Error />;

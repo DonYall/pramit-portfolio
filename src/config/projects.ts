@@ -2,6 +2,7 @@ import { project } from "./defs";
 const projects: project[] = [
   {
     name: "CA2RC-SAT",
+    slug: "ca2rc-sat",
     href: "https://ca2rc.ca/projects/ca2rc-sat/",
     img: "ca2rcsat.jpg",
     subtitle: "Mechanical Team Lead",
@@ -28,6 +29,7 @@ CA2RC-SAT hopes to be Carleton University's first satellite launched into orbit.
   },
   {
     name: "High Altitude Balloon",
+    slug: "hab",
     href: "https://ca2rc.ca/projects/hab/",
     img: "hab.jpg",
     subtitle: "Mechanical Team Lead",
@@ -61,6 +63,7 @@ CA2RC has also been involved in high-altitude balloon (HAB) experiments, a key i
   },
   {
     name: "CuSat",
+    slug: "cusat",
     img: "cusat.jpg",
     subtitle: "Undergraduate Member",
     organization: "CU Spacecraft Lab",
@@ -84,6 +87,7 @@ As an undergraduate assistant at Carleton University's Spacecraft Manufacturing 
   },
   {
     name: "Robotic Arm Gripper",
+    slug: "gripper",
     img: "gripper.jpg",
     subtitle: "Project Lead",
     organization: "Space Copy",
@@ -116,6 +120,7 @@ As a part of my internship at Space Copy, I led the development of a specialized
   },
   {
     name: "Giant Calculator Kart",
+    slug: "soapbox",
     img: "soapbox.jpg",
     subtitle: "Project Lead",
     organization: "Red Bull Soapbox",
@@ -147,6 +152,7 @@ For the 2024 Red Bull Soapbox Race in Edmonton, I led the design and constructio
   },
   {
     name: "Landsat Lab",
+    slug: "landsat",
     img: "spaceapps.png",
     subtitle: "Project Member",
     organization: "NASA Space Apps",

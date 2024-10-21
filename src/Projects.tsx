@@ -3,7 +3,7 @@ import ProjectCard from "./components/ProjectCard";
 import { project } from "./config/defs";
 import { projects } from "./config/projects";
 
-function Projects({ onProjectClicked }: { onProjectClicked: (name: string) => void }) {
+function Projects({ onProjectClicked }: { onProjectClicked: (slug: string) => void }) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const ref = useRef(null);
 
@@ -29,6 +29,7 @@ function Projects({ onProjectClicked }: { onProjectClicked: (name: string) => vo
         <ProjectCard
           key={index}
           name={project.name}
+          slug={project.slug}
           subtitle={project.subtitle}
           organization={project.organization}
           href={project.href}

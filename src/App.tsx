@@ -10,16 +10,26 @@ import { useState } from "react";
 function App() {
   const [project, setProject] = useState("");
 
-  const handleProjectClicked = (name: string) => {
-    setProject(name);
+  window.addEventListener("hashchange", () => {
+    if (window.location.hash === "") {
+      setProject("");
+    } else {
+      setProject(window.location.hash.substring(1));
+    }
+  });
+
+  const handleProjectClicked = (slug: string) => {
+    window.location.hash = slug;
+    setProject(slug);
   };
 
   const backClicked = () => {
+    window.location.hash = "";
     setProject("");
   };
 
   if (project) {
-    return <ProjectPage name={project} onBackClicked={backClicked} />;
+    return <ProjectPage slug={project} onBackClicked={backClicked} />;
   }
 
   return (
