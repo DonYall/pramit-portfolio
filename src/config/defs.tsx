@@ -1,7 +1,7 @@
 export type project = {
   name: string;
   organization: string;
-  href: string;
+  href?: string;
   img: string;
   className?: string;
   subtitle: string;
