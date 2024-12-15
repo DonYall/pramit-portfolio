@@ -24,10 +24,10 @@ function ProjectPage({ slug: slug, onBackClicked }: { slug: string; onBackClicke
       </div>
       {project.href ? (
         <a href={project.href} target="_blank" className="block w-fit">
-          <h1 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-fit hover:underline">{project.name}</h1>
+          <h2 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-fit hover:underline">{project.name}</h2>
         </a>
       ) : (
-        <h1 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-fit">{project.name}</h1>
+        <h2 className="text-4xl font-semibold font-montserrat leading-none text-white mb-6 w-fit">{project.name}</h2>
       )}
 
       <h2 className="text-2xl font-normal font-montserrat leading-none text-gray-300 mb-12 w-full">

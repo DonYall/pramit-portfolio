@@ -24,7 +24,7 @@ function About() {
   return (
     <section className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 relative" ref={ref}>
       <div className="col-span-2 lg:col-span-1 p-10 lg:p-40 lg:pr-16 my-auto">
-        <h1 className="text-4xl font-normal font-montserrat leading-none">ABOUT</h1>
+        <h2 className="text-4xl font-normal font-montserrat leading-none">ABOUT</h2>
         <p className="text-md mt-8 text-gray-300">
           I am a 2nd year aerospace engineering co-op student at Carleton University. I have learnt and developed many technical skills and am eager to apply my
           knowledge to real-world engineering problems. I am Always looking for opportunities to grow and learn in the aerospace industry and am committed to

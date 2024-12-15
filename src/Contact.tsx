@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 relative">
       <div className="col-span-3 md:col-span-1 p-10 lg:p-40 my-auto flex flex-col items-start px-2 w-4/5 mx-auto md:w-fit md:px-10">
-        <h1 className="text-4xl font-normal font-montserrat leading-none mb-8">CONTACT</h1>
+        <h2 className="text-4xl font-normal font-montserrat leading-none mb-8">CONTACT</h2>
         <h3 className="text-gray-300 hidden md:block">Email</h3>
         <a href="mailto:pramitshende@gmail.com" className="text-lg">
           pramitshende@gmail.com

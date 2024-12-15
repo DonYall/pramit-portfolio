@@ -9,7 +9,7 @@ function ProjectCard({ name, slug, subtitle, organization, img, className, onCli
       <img src={`./thumbnails/${img}`} alt={name} className={`w-full h-44 object-cover rounded-t-3xl ${className}`} />
       <div className={`p-6 w-full ${className}`}>
         <h2 className="text-md text-gray-300 text-center">{organization}</h2>
-        <h1 className="text-xl mt-2 font-semibold text-center">{name}</h1>
+        <h2 className="text-xl mt-2 font-semibold text-center">{name}</h2>
         <p className="text-md mt-2 text-gray-300">{subtitle}</p>
       </div>
     </button>
