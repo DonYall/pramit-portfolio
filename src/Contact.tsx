@@ -27,10 +27,10 @@ function Contact() {
       </div>
       <div className="flex flex-col justify-center items-center z-10 gap-4 md:py-12">
         <form className="flex flex-col gap-8 md:px-8 py-12 w-4/5 lg:w-1/2" action="https://formspree.io/f/mvgpeezz" method="POST">
-          <input name="Name" type="text" placeholder="Name*" className="py-2 px-4 bg-black/75 rounded-lg text-sm border border-gray-400" required />
-          <input name="Email" type="email" placeholder="Email*" className="py-2 px-4 bg-black/75 rounded-lg text-sm border border-gray-400" required />
-          <input name="Phone" type="tel" placeholder="Phone" className="py-2 px-4 bg-black/75 rounded-lg text-sm border border-gray-400" />
-          <textarea name="Message" placeholder="Message*" className="py-2 px-4 bg-black/75 rounded-lg text-sm border border-gray-400" />
+          <input name="Name" type="text" placeholder="Name*" className="py-2 px-3 bg-black/75 rounded-lg text-sm border border-gray-400" required />
+          <input name="Email" type="email" placeholder="Email*" className="py-2 px-3 bg-black/75 rounded-lg text-sm border border-gray-400" required />
+          <input name="Phone" type="tel" placeholder="Phone" className="py-2 px-3 bg-black/75 rounded-lg text-sm border border-gray-400" />
+          <textarea name="Message" placeholder="Message*" className="py-2 px-3 bg-black/75 rounded-lg text-sm border border-gray-400" />
           <button className="p-2 rounded-lg border-2 bg-black/80 border-gray-700 hover:border-white transition-colors duration-300" type="submit">
             SEND
           </button>

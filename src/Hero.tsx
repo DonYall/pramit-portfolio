@@ -10,8 +10,8 @@ function Hero() {
           <a href="https://carleton.ca" target="_blank" rel="noreferrer">
             <img className="h-16" src="./logos/carleton.png" alt="Carleton" />
           </a>
-          <a href="https://ca2rc.ca" target="_blank" rel="noreferrer">
-            <img className="h-16" src="./logos/ca2rc.png" alt="CA2RC" />
+          <a href="https://cuonorbit.ca" target="_blank" rel="noreferrer">
+            <img className="h-16" src="./logos/cuonorbit.png" alt="CUonOrbit" />
           </a>
           <a href="https://spacecopy.com" target="_blank" rel="noreferrer">
             <img className="h-16" src="./logos/spacecopy.webp" alt="Spacecopy" />
@@ -23,7 +23,7 @@ function Hero() {
       </div>
       <div className="bg-black/80 mx-8 md:mx-16 my-auto mb-0 md:mb-auto z-10 rounded-xl border-gray-500 border py-4 px-8 shadow-2xl shadow-gray-700 text-base md:text-xl lg:text-2xl font-light leading-none font-mono animate-appear-down">
         &gt; &nbsp;
-        <TypeAnimation sequence={["Hey", 1000, "I'm Pramit Shende", 1000, "Welcome to my website"]} wrapper="span" cursor={true} />
+        <TypeAnimation sequence={["Hey", 1000, "I'm Pramit Shende", 1000, "Check out what I've been up to"]} wrapper="span" cursor={true} />
       </div>
       <div className="flex flex-col justify-center items-center z-10 gap-4 animate-appear-up">
         <img className="size-72 rounded-full object-cover mb-4" src="./headshot.jpeg" alt="avatar" />

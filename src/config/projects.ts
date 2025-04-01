@@ -1,41 +1,41 @@
 import { project } from "./defs";
 const projects: project[] = [
   {
-    name: "CA2RC-SAT",
-    slug: "ca2rc-sat",
-    href: "https://ca2rc.ca/projects/ca2rc-sat/",
-    img: "ca2rcsat.jpg",
-    subtitle: "Mechanical Team Lead",
-    organization: "CA2RC",
+    name: "Kâhkâkiw-Sat",
+    slug: "kahkakiw-sat",
+    href: "https://cuonorbit.ca/mission/kahkakiw-sat/",
+    img: "kahkakiw.png",
+    subtitle: "Team Lead",
+    organization: "CUonOrbit",
     content: `
-CA2RC-SAT hopes to be Carleton University's first satellite launched into orbit. This project began in September, 2023 as a part of the Carleton Aerospace Astrophysics Radio Club (CA2RC). Our goal is to allow students to gain valuable experience regarding satellite design and manufacturing, allowing them to transition in to Highly Qualified Personnel (HQP). I hold a leadership role within this project both as the vice-president of the club and also the mechanical team lead for the satellite. Some of my roles and accomplishments within the project include:
+Kâhkâkiw-Sat hopes to be Carleton University's first satellite launched into orbit. This project began in September, 2023 as a part of Carleton University On Orbit (CUonOrbit). Our goal is to allow students to gain valuable experience regarding satellite design and manufacturing, allowing them to transition in to Highly Qualified Personnel (HQP). I hold a leadership role within this project both as the vice-president of the club and also the mechanical team lead for the satellite. Some of my roles and accomplishments within the project include:
 
 - Completed a mock first Preliminary Design Review (PDR) regarding the structural and thermal design of the cube satellite.
-- Performed preliminary thermal analysis of 3U CA2RC-SAT components using Systems Toolkit (STK) and designed thermoregulation architecture to ensure optimal operating temperature for all parts.
-- Drafted the first CAD model of CA2RC-SAT using Onshape, integrating all subsystems together.
+- Performed preliminary thermal analysis of 3U Kâhkâkiw-Sat components using Systems Toolkit (STK) and designed thermoregulation architecture to ensure optimal operating temperature for all parts.
+- Drafted the first CAD model of Kâhkâkiw-Sat using Onshape, integrating all subsystems together.
 - Performed preliminary structural analysis of CubeSat structures for random /sinusoidal vibration, and acceleration loads in Ansys, ensuring the structure met the requirements of launch providers.
 - Leading project management for creating a funding proposal for CSA’s CUBICS program in summer 2025, hoping to secure $350,000 for the project.
 `,
     gallery: [
       {
-        caption: "Presenting the Preliminary Design Review (PDR) for the mechanical subsystem of CA2RC-SAT",
-        src: "ca2rcsat1.jpg",
+        caption: "Concurrent engineering design session for Kâhkâkiw-Sat",
+        src: "kahkakiw1.png",
       },
       {
-        caption: "Preliminary CAD models of CA2RC-SAT",
-        src: "ca2rcsat2.png",
+        caption: "Presenting the Preliminary Design Review (PDR) for the mechanical subsystem of Kâhkâkiw-Sat",
+        src: "kahkakiw2.jpg",
       },
     ],
   },
   {
-    name: "High Altitude Balloon",
+    name: "HAB-1",
     slug: "hab",
-    href: "https://ca2rc.ca/projects/hab/",
+    href: "https://cuonorbit.ca/missions/hab/",
     img: "hab.jpg",
-    subtitle: "Mechanical Team Lead",
-    organization: "CA2RC",
+    subtitle: "Team Lead",
+    organization: "CUonOrbit",
     content: `
-CA2RC has also been involved in high-altitude balloon (HAB) experiments, a key initiative of the club. Last year, during the total eclipse in April, we successfully launched a high-altitude balloon to measure atmospheric changes, specifically NO2 levels. As a leader within this project, I played an integral role in both the planning and execution phases. Some of my roles and accomplishments for this mission include:
+CUonOrbit has also been involved in high-altitude balloon (HAB) experiments, a key initiative of the club. Last year, during the total eclipse in April, we successfully launched a high-altitude balloon to measure atmospheric changes, specifically NO2 levels. As a leader within this project, I played an integral role in both the planning and execution phases. Some of my roles and accomplishments for this mission include:
 
 - Coordinated the launch event on the day of the total eclipse, ensuring the experiment's timing aligned with peak conditions for atmospheric measurement.
 - Led the design and structural assembly of the payload housing, ensuring durability and safety during the balloon’s ascent to the stratosphere.
@@ -157,7 +157,7 @@ For the 2024 Red Bull Soapbox Race in Edmonton, I led the design and constructio
     subtitle: "Project Member",
     organization: "NASA Space Apps",
     content: `
-As a part of the NASA Space Apps Challenge in Ottawa, members from CA2RC came together to compete in the global hackathon. Over 48 hours, we developed Landsat Lab, a web app aimed to make Landsat Data more accessible  to citizen scientists and other users. My roles and accomplishments in this project include:
+As a part of the NASA Space Apps Challenge in Ottawa, members from CUonOrbit came together to compete in the global hackathon. Over 48 hours, we developed Landsat Lab, a web app aimed to make Landsat Data more accessible  to citizen scientists and other users. My roles and accomplishments in this project include:
 
 - Provided in-depth knowledge of satellite data and remote sensing theory to inform the design and assembly of the Landsat Lab platform, ensuring accurate data interpretation.
 - Led the integration of Landsat 8 and 9 data streams, configuring APIs to retrieve and display real-time surface reflectance data for users.

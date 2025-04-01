@@ -25,7 +25,7 @@ function App() {
 
   const backClicked = () => {
     window.location.hash = "";
-    setProject("");
+    // setProject("");
   };
 
   if (project) {
